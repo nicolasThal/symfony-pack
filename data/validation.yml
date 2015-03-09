@@ -14,3 +14,30 @@ questions:
             - {value: "$validator->validateValue($object, $constraint)", correct: true}
             - {value: "$validator->isValid($object, $constraint)",       correct: false}
             - {value: "$validator->validation($object, $constraint)",    correct: false}
+    -
+        question: 'To add a class property contstraint, which method shall be called?'
+        answers:
+            - {value: "$metadata->addPropertyConstraint('name', new NotBlank())",      correct: true}
+            - {value: "$metadata->setPropertyConstraint('name', new NotBlank())", correct: false}
+            - {value: "$metadata->addConstraint('name', new NotBlank())",       correct: false}
+            - {value: "$metadata->setConstraint('name', new NotBlank())",    correct: false}
+    -
+        question: 'Annotation method to specify your constraints is enabled by default'
+        answers:
+            - {value: "Yes", correct: false}
+            - {value: "No", correct: true}
+    -
+        question: 'Which constraints are not provided with symfony'
+        answers:
+            - {value: "Number", correct: true}
+            - {value: "Timestamp", correct: true}
+            - {value: "Image", correct: false}
+            - {value: "Boolean", correct: true}
+
+    -
+        question: 'in order to validate a raw value which method of the service validator shall be used'
+        answers:
+            - {value: "validateRaw", correct: false}
+            - {value: "validate()", correct: false}
+            - {value: "validateValue()", correct: true}
+            - {value: "isValid()", correct: false}
