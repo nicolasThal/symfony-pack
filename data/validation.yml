@@ -35,9 +35,33 @@ questions:
             - {value: "Boolean", correct: true}
 
     -
-        question: 'in order to validate a raw value which method of the service validator shall be used'
+        question: 'In order to validate a raw value which method of the service validator shall be used ?'
         answers:
             - {value: "validateRaw", correct: false}
             - {value: "validate()", correct: false}
             - {value: "validateValue()", correct: true}
             - {value: "isValid()", correct: false}
+    -
+        question: 'The validation component allow validation only on public properties'
+        answers:
+            - {value: "Yes", correct: false}
+            - {value: "No", correct: true}
+    -
+        question: 'Starting from the 2.5 version it is possible to add constraints on any method prefixed by "get" "is" or "has" ?'
+        answers:
+            - {value: "Yes", correct: false}
+            - {value: "No", correct: true}
+    -
+        question: 'Which method is used to add violations when using the Callback contraint?'
+        answers:
+            - {value: "buildViolation()", correct: false}
+            - {value: "addViolation()", correct: true}
+            - {value: "buildViolationAt()", correct: false}
+            - {value: "addViolationAt()", correct: true}
+    -
+        question: 'In a validation groups context which asserts are true?'
+        answers:
+            - {value: "The Default group contains the constraints in the current class and all referenced classes that belong to no other group.", correct: true}
+            - {value: "The group named after the class contains all constraints of the so called class except those in the Default group", correct: false}
+
+
