@@ -64,4 +64,18 @@ questions:
             - {value: "The Default group contains the constraints in the current class and all referenced classes that belong to no other group.", correct: true}
             - {value: "The group named after the class contains all constraints of the so called class except those in the Default group", correct: false}
 
-
+    -
+        question: 'Using group sequences validation how is the default group referenced?'
+        answers:
+            - {value: "Default only", correct: false}
+            - {value: "group with the class name", correct: true}
+            - {value: "both", correct: false}
+            - {value: "neither", correct: false}
+    -
+        question: 'Using validation groups with forms and based on submitted data, which class is passed to the called method'
+        answers:
+            - {value: "FormInterface", correct: true}
+            - {value: "OptionsResolverInterface", correct: false}
+            - {value: "ContraintInterface", correct: false}
+            - {value: "ValidatorGroupSequenceInterface", correct: false}
+    
